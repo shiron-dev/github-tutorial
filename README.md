@@ -19,7 +19,7 @@
    - Include all branches はチェックが外れていることを確認してください。
      ![Create repository](docs/README/imgs/create-repo2.png)
 1. 緑の"Create repository from template"というボタンを押しましょう。
-   すると、自動的に画面が切り替わり、ここに表示されるメッセージも更新されます。
+   すると、自動的に画面が切り替わります。そして、20 秒ほど待った後、ページをリロードすると、ここに表示されるメッセージも更新されます。
 
 ## ライセンス
 
