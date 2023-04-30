@@ -19,7 +19,7 @@ GitHub 上で、プルリクエストを作成しましょう。
    今回の例ではタイトルを
 
    ```
-   feat: add src/hello.md
+   feat add src/hello.md
    ```
 
    としてください。

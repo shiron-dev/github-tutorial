@@ -8,7 +8,7 @@ on:
 
 jobs:
   create-pr:
-    if: '${{ github.event.pull_request.title == "feat: add src/hello.md"}}'
+    if: ${{ github.event.pull_request.title == 'feat add src/hello.md'}}
     permissions:
       actions: write
       checks: write
