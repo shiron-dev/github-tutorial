@@ -7,7 +7,7 @@ src/sample.md の編集と、GitHub のリモートリポジトリへの Push �
 次に以下を順番に習得していきましょう。
 
 - [共同開発・GitHub に関する用語の説明](/docs/collab/words.md)
-- [なぜ Git・GitHub を使いたいか]
+- [なぜ Git・GitHub を使いたいか](/docs/collab/why-use.md)
 - [GitHub を操作してみる]
 
 [全体の目次](/contents.md)
