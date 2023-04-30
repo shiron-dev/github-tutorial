@@ -8,6 +8,6 @@ src/sample.md の編集と、GitHub のリモートリポジトリへの Push �
 
 - [共同開発・GitHub に関する用語の説明](/docs/collab/words.md)
 - [なぜ Git・GitHub を使いたいか](/docs/collab/why-use.md)
-- [GitHub を操作してみる]
+- [GitHub を操作してみる](/docs/collab/use-github.md)
 
 [全体の目次](/contents.md)
