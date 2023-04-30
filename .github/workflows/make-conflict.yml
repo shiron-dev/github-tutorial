@@ -25,6 +25,12 @@ jobs:
           git add .
           git commit -m "update to README-5.md"
           git push
+      - run: |
+          git checkout -b feat/main
+          cp works/conflict/conflict-feat.md src/conflict.md
+          git add .
+          git commit -m 'feat: add src/conflict.md'
+          git push origin feat/main
       - uses: actions/checkout@v3
         with:
           ref: main
@@ -33,9 +39,3 @@ jobs:
           git add .
           git commit -m "feat: add src/conflict.md"
           git push origin main
-      - run: |
-          git checkout -b feat/main
-          cp works/conflict/conflict-feat.md src/conflict.md
-          git add .
-          git commit -m 'feat: add src/conflict.md'
-          git push origin feat/main
