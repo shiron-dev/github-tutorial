@@ -18,7 +18,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-        run: |
+      - run: |
           cp docs/README/README-3.md README.md
           rm src/sample.md
           git config user.name  "github actions"
