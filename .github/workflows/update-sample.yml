@@ -18,9 +18,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - if: ${{ github.run_number == 1}}
         run: |
           cp docs/README/README-3.md README.md
+          rm src/sample.md
           git config user.name  "github actions"
           git config user.email "actions@example.com"
           git add .
