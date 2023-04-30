@@ -7,6 +7,6 @@ issue の生成を確認しました。
 - [ブランチを切る](/docs/contrib/branch.md)
 - [コミットメッセージについて](/docs/contrib/commit.md)
 - [issue に対応する](/docs/contrib/submit.md)
-- PR を立てる
+- [PR を立てる](/docs/contrib/pr.md)
 
 [全体の目次](/contents.md)
