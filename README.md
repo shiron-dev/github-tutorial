@@ -1,5 +1,7 @@
 # GitHub Tutorial
 
+[目次](/contents.md)
+
 ## はじめに
 
 このリポジトリでは、Git や GitHub を使ったことがない人でも共同開発が行えるようにチュートリアルを提供します。
@@ -11,13 +13,13 @@
 (「リポジトリ」等のワードについての説明はのちに行います。)
 
 1. 画像のボタンを押してください。
-   ![Create repository](docs/README/imgs/create-repo1.png)
+   ![Create repository](/docs/README/imgs/create-repo1.png)
 
 1. - Owner の部分はすでに選択されていたら、何もしなくても構いません。画像のように"Select an owner"となっていた場合は自分の GitHub のアカウントを選択してください。
    - Repository name にはわかりやすい名前を自由に入力してください。例えば、例として- "github-tutorial"とかが良いでしょう。
    - 鍵のマークがついた Private が選択されていることを確認してください。
    - Include all branches はチェックが外れていることを確認してください。
-     ![Create repository](docs/README/imgs/create-repo2.png)
+     ![Create repository](/docs/README/imgs/create-repo2.png)
 1. 緑の"Create repository from template"というボタンを押しましょう。
    すると、自動的に画面が切り替わります。そして、20 秒ほど待った後、ページをリロードすると、ここに表示されるメッセージも更新されます。
 

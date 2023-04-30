@@ -18,7 +18,8 @@ jobs:
       - uses: actions/checkout@v3
       - if: ${{ github.run_number == 1}}
         run: |
-          mv docs/README/README-2.md README.md
+          mv README.md docs/README/README-1.md
+          cp docs/README/README-2.md README.md
           git config user.name  "github actions"
           git config user.email "actions@example.com"
           git add .
