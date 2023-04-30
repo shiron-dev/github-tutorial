@@ -67,7 +67,7 @@ git config --global user.email "your_email@example.com"
 git config --global core.editor "vscode"
 ```
 
-上記の例では、vscode をテキストエディタとして使用していますが、vim や nano 等、他のテキストエディタを使用する場合は、そのテキストエディタの名前を使用してください。
+上記の例では、VS Code をテキストエディタとして使用していますが、vim や nano 等、他のテキストエディタを使用する場合は、そのテキストエディタの名前を使用してください。
 
 ### GitHub に公開鍵を設定する
 
