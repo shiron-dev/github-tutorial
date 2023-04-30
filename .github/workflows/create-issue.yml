@@ -1,0 +1,26 @@
+name: Create issue
+on:
+  issues:
+    types:
+      - opened
+
+jobs:
+  create-issue:
+    if: ${{ github.event.issue.title == 'create src/hello.md'}}
+    permissions:
+      actions: write
+      checks: write
+      contents: write
+      issues: write
+      pull-requests: write
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: |
+          rm README.md
+          cp docs/README/README-4.md README.md
+          git config user.name  "github actions"
+          git config user.email "actions@example.com"
+          git add .
+          git commit -m "update to README-4.md"
+          git push
