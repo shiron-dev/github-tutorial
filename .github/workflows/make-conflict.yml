@@ -3,10 +3,11 @@ on:
   pull_request:
     types:
       - closed
+    paths:
+      - "src/hello.md"
 
 jobs:
   make-conflict:
-    if: ${{ github.event.pull_request.title == 'feat add src/hello.md'}}
     permissions:
       actions: write
       checks: write
