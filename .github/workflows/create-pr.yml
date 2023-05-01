@@ -5,10 +5,11 @@ on:
       - opened
       - edited
       - synchronize
+    paths:
+      - "src/hello.md"
 
 jobs:
   create-pr:
-    if: ${{ github.event.pull_request.title == 'feat add src/hello.md'}}
     permissions:
       actions: write
       checks: write
