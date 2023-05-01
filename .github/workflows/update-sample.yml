@@ -1,0 +1,28 @@
+name: Update sample
+on:
+  push:
+    branches:
+      - main
+      - master
+    paths:
+      - "src/sample.md"
+
+jobs:
+  update-sample:
+    permissions:
+      actions: write
+      checks: write
+      contents: write
+      issues: write
+      pull-requests: write
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: |
+          cp docs/README/README-3.md README.md
+          rm src/sample.md
+          git config user.name  "github actions"
+          git config user.email "actions@example.com"
+          git add .
+          git commit -m "update to README-3.md"
+          git push

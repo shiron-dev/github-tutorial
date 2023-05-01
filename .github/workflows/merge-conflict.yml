@@ -1,0 +1,26 @@
+name: Merge conflict
+on:
+  pull_request:
+    types:
+      - closed
+    paths:
+      - "src/conflict.md"
+
+jobs:
+  merge-conflict:
+    permissions:
+      actions: write
+      checks: write
+      contents: write
+      issues: write
+      pull-requests: write
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: |
+          cp docs/README/README-6.md README.md
+          git config user.name  "github actions"
+          git config user.email "actions@example.com"
+          git add .
+          git commit -m "update to README-6.md"
+          git push

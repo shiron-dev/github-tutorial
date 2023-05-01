@@ -1,0 +1,41 @@
+name: Make conflict
+on:
+  pull_request:
+    types:
+      - closed
+
+jobs:
+  make-conflict:
+    if: ${{ github.event.pull_request.title == 'feat add src/hello.md'}}
+    permissions:
+      actions: write
+      checks: write
+      contents: write
+      issues: write
+      pull-requests: write
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v3
+      - run: |
+          cp docs/README/README-5.md README.md
+          git config user.name  "github actions"
+          git config user.email "actions@example.com"
+          git add .
+          git commit -m "update to README-5.md"
+          git push
+      - run: |
+          git checkout -b feat/main
+          cp works/conflict/conflict-feat.md src/conflict.md
+          git add .
+          git commit -m 'feat: add src/conflict.md'
+          git push origin feat/main
+      - uses: actions/checkout@v3
+        with:
+          ref: main
+      - run: |
+          cp works/conflict/conflict-main.md src/conflict.md
+          git add .
+          git commit -m "feat: add src/conflict.md"
+          git push origin main
