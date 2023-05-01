@@ -9,6 +9,7 @@
 1. [共同開発・GitHub の操作方法](/docs/README/README-3.md)
 1. [issue の解決](/docs/README/README-4.md)
 1. [共同開発 2](/docs/README/README-5.md)
+1. [実践的な Git の使用](/docs/README/README-6.md)
 
 ## ライセンス
 
