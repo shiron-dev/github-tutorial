@@ -26,3 +26,7 @@
 ## ライセンス
 
 本リポジトリは MIT ライセンスで公開されています。
+
+## 貢献
+
+[Contribution Guide](/CONTRIBUTING.md)
