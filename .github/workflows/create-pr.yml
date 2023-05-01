@@ -23,4 +23,4 @@ jobs:
       PR_URL: ${{ github.event.pull_request.html_url }}
     steps:
       - uses: actions/checkout@v3
-      - run: source sh/check-pr.sh
+      - run: source works/check-pr/check-pr.sh
